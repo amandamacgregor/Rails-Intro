@@ -1,0 +1,18 @@
+<% content_for(:body, "signin")%>
+Sign In Below:
+
+<!--As a user, if 'Sign In' with a user_id that is at least 6 characters along and a password that is not the same as my user_id, I am greeted by my user_id: 'Welcome, user_id!-->
+
+<form action="/signin" method="get">
+  <label for="user_id">User ID:</label>
+  <input name="user_id" type="string"/>
+    <br/>
+  <label for="password">Password:</label>
+  <input name="email" type="string"/>
+    <br/>
+  <input type="submit" value="Sign In"/>
+</form>
+
+<h5>Welcome, <%=@user_id%> </h5>
+
+

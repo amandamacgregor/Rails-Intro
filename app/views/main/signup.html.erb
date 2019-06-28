@@ -1,0 +1,24 @@
+<% content_for(:body, "signup")%>
+Sign Up Below:
+
+<!--As a user, when I 'Sign Up' with a user_name, email, password, and password confirmation, I am greeted by my user_name on the same page-->
+
+<form action="/signup" method="get">
+  <label for="user_name">User Name:</label>
+  <input name="user_name" type="string"/>
+    <br/>
+  <label for="email">Email:</label>
+  <input name="email" type="string"/>
+    <br/>
+  <label for="password">Password:</label>
+  <input name="password" type="password"/>
+    <br/>
+  <label for="password_confirm">Confirm Password:</label>
+  <input name="password_confirm" type="password"/>
+    <br>
+  <input type="submit" value="Sign Up"/>
+</form>
+
+<h5>Welcome, <%=@name%> </h5>
+
+
